@@ -23,6 +23,7 @@ import org.apache.avro.specific.SpecificDatumWriter;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
+//java -jar /home/Hadoop/Avro_work/jars/avro-tools-1.7.7.jar compile schema /home/Hadoop/Avro_work/schema/emp.avsc /home/Hadoop/Avro/with_code_gen
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = MainActivity.class.getSimpleName();
