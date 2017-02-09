@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "doc": "A Person is someone who can login to the system.\n\nThe first version of a Person record has been renamed from `Person` to `PersonV1` to prevent clashes between this and the newer version of the Person record.  The Java code can continue to use the `Person` class and will gain from the new fields when the new version is generated.",
+  "namespace": "com.chetan.androidavrodemo.model",
+  "name": "PersonV1",
+  "fields": [
+    {"name": "username", "type": "string",
+     "doc": "The username that uniquely identifies the user"},
+    {"name": "password", "type": "string",
+     "doc": "A password, hopefully encrypted"},
+    {"name": "joined_on", "type": "long",
+     "doc": "The offset from the UTC epoch when the user joined in on the fun"}
+  ]
+}

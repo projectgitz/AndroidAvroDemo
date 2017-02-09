@@ -1,0 +1,16 @@
+{
+  "type": "record",
+  "doc": "A Person is someone who can login to the system.",
+  "namespace": "com.chetan.androidavrodemo.model",
+  "name": "Person",
+  "fields": [
+    {"name": "username", "type": "string",
+     "doc": "The username that uniquely identifies the user"},
+    {"name": "password", "type": "string",
+     "doc": "A password, hopefully encrypted"},
+    {"name": "joined_on", "type": "long",
+     "doc": "The offset from the UTC epoch when the user joined in on the fun"},
+    {"name": "email", "type": ["string", "null"], "default": "null",
+     "doc": "The email address.  Since this is a new field, it must be nullable or have a non-null default set."}
+  ]
+}
